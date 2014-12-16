@@ -87,6 +87,12 @@ select { background-color: white; font-family: inherit; border: 0; -webkit-box-s
    3 = Header
    ================== */
 header {background:url(images/header_alt-6_bg.png) bottom center no-repeat;background-size:cover; background-attachment:fixed; min-height:680px; position: relative}
+.sub-page-wrapper header {
+  min-height:360px;
+}
+.sub-page-wrapper .overlay {
+  height:360px;
+}
 header .message {position: absolute; top:125px; left:1%; right:1%; margin:0 auto; text-align: center}
 .message-intro {display:table-row;line-height:1.5em;font-size:2em;white-space:nowrap;margin-bottom:2em}
 .message-intro p{font-family:'Oswald'; font-size:inherit;overflow:hidden; vertical-align:middle;padding-bottom:30px;color:#fff;font-size:22px;font-weight:400; letter-spacing: 2px}
@@ -114,6 +120,7 @@ header.alt-5 {background:url(images/header_alt-5_bg.jpg) bottom center no-repeat
 header.login {background:transparent; min-height:1px;}
 
 header.alt-1 .message h1, header.alt-2 .message h1, header.alt-4 .message h1 {color: #D7D7D7}
+
 .overlay {
   position:relative; top:0px; width:100%; height:800px;
 }
@@ -146,7 +153,7 @@ form .btn-default:hover {
   border:3px solid #5B99C5
 }
 .btn-default {
-  background: transparent;
+  background:#37485c;
   display: inline-block;
   color: #ffffff;
   margin-top: 60px;
@@ -158,6 +165,7 @@ form .btn-default:hover {
   padding-left: 1.75rem;
   font-size: 0.8125rem;
   border-radius: 1px;
+  border:3px solid #37485c;
 }
 .btn-default:hover {
   color:#fff;
@@ -351,6 +359,17 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
   padding-bottom: 60px;
   color:#282b30;
 }
+.portfolio p {
+  text-align:left;
+  margin-bottom:30px;
+  letter-spacing: 1px;
+  color: #424242;
+  font-weight:200;
+  font-size:1.15em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
 
 #og-grid img:hover {
   opacity:0.7;
@@ -396,7 +415,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
 }
 
 /* Profile */
-.profile {padding:50px 0 0; overflow:hidden; padding-bottom:40px; padding-top:40px;}
+.profile {padding:50px 0 0; overflow:hidden; padding-bottom:40px; padding-top:40px; background:#F1F2F4;}
 .profile .row {padding-top:40px;padding-bottom:40px;}
 .profile h2 {
   font-family: 'sifonnbasic';
@@ -459,11 +478,91 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
   color:#222222 !important;
 }
 .profile .fa:hover {color:#5B99C5; }
+.profile img {
+  opacity:0.7;
+}
 
 
 /* ==================
    5 = Inner Pages
    ================== */
+
+
+/* Blog ---------------------- */
+.sectionarea {padding:50px 0;overflow:hidden;}
+.sectionarea.blog h2 {font-size:33px;padding:0; font-weight:900; margin:8px 0 28px; text-transform: uppercase;}
+.sectionarea.blog h2 a {color:#4B4854;}
+.sectionarea.blog h2 a:hover {color:#b86662; text-decoration: none}
+.sectionarea.blog h3 {font-size:20px;padding:0; color:#666; font-weight:300; margin:10px 0; line-height: 1.3}
+.sectionarea.blog .meta {letter-spacing:.07em; margin:10px 0 15px; padding:10px 2px 10px 0; color:#222D3A; border-top:1px solid #e8e8e8; border-bottom:4px solid #e8e8e8; font-size:13px; font-weight: 300;	text-transform: uppercase;}
+.sectionarea.blog .meta i {padding:0 10px 0 5px; color:#222D3A;}
+.sectionarea.blog .meta a {color:#37485c;}
+.sectionarea.blog .entry p {margin-top:15px; color:#3D3F40; font-size:16px;}
+.sectionarea.blog .button {background:#8C7379; color:#fff; font-weight:700; padding:8px 15px;}
+.sectionarea.blog .button:hover {background:#b86662;; text-decoration: none}
+.sectionarea.blog hr.separator { border: solid #e8e8e8; border-width: 1px 0 0; clear: both; margin: 40px 0; height: 0; }
+#blogslider .item img{    display: block;    width: 100%;    height: auto;    }
+ul.pagination {margin:0 auto; text-align: center; display:table; margin-top:50px;}
+ul.pagination li { font-size:17px; }
+ul.pagination li:hover a, ul.pagination li a:focus { text-decoration: none }
+ul.pagination li.current a {  background: #b86662;}
+
+/* widgetized areas sidebar  ---------------------- */
+.sidebar {position: relative; padding:0 0 8px; margin:12px 0 5px;}
+.sidebar #searchform {padding:15px 0 11px; margin:0;}
+.sidebar #searchform input {background:#fff; border:1px solid #ccc; width:100%;  font-size:13px; color: #303038; height:28px;}
+.sidebar #searchform button {background:#fff; margin-right:0; margin-top: 0; color:#333; padding: 6px 7px 5px; font-size:12px; -webkit-border-top-left-radius: 4px;-webkit-border-bottom-left-radius: 4px;-moz-border-radius-topleft: 4px;-moz-border-radius-bottomleft: 4px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;}
+.sidebar .widget {margin-bottom:30px;}
+.sidebar .textwidget {padding:4px 0; margin:0; line-height:1.4;}
+.sidebar h4 {margin:0; padding:0;}
+.sidebar h4.widget_title { color:#4B4854; background:#E8E8E8; font-size:13px; padding:9px 8px 8px; letter-spacing:.07em; text-transform:uppercase; position: relative; font-weight:900;}
+.sidebar input {margin:0; padding: 0 8px; height:27px;}
+.sidebar button {margin:0; padding:0; border:0;}
+.sidebar form {margin:0; padding:0}
+.sidebar select {background-color: white; font-size:12px; font-family: inherit; border: 1px solid #cccccc; color:#333; display: block; margin:0 auto; margin-top:12px; margin-bottom:12px; padding: 4px; width: 100%;}
+.sidebar ul { list-style: none; margin:0; padding:4px 0; }
+.sidebar ul li {padding:7px 0; border-bottom:1px solid; border-color: #ecedee; font-weight:600; letter-spacing:.07em; text-transform:uppercase; font-size:12px; text-align: right}
+.sidebar ul li:last-child { border-bottom:0;}
+.sidebar ul li a { color:#37485c}
+.sidebar ul li a:hover { color:#5B99C5; text-decoration: none}
+.sidebar .portfoliowidget li {border-bottom:0; padding:3px;}
+.sidebar .latestpostimg {float:right; width:25%;}
+.sidebar .latestpostinfo {float:left; width:70%;}
+.sidebar .latestpostinfo .latestposttitle {font-size:13px; color:#000; font-weight:bold; padding:4px 8px 10px 0; line-height:1.3;}
+.sidebar .latestpostinfo .latestpostdate {font-size:10px; color:#999; padding-right:8px;}
+.sidebar ul.children, .sidebar ul.sub-menu {padding-right:20px;}
+.sidebar abbr {color:#999;}
+.sidebar span a.rsswidget { color:#fff; padding-right:2px;}
+.sidebar .rssSummary { padding-top:7px; line-height:1.3;}
+.sidebar p.wp-caption-text {color:#666;}
+.sidebar img.attachment-shop_thumbnail {max-width:50px; height:auto; float:left; padding-right:10px;}
+.sidebar ul.product_list_widget li {overflow:hidden;}
+.sidebar ul.product_list_widget li span.amount {display:block;}
+.sidebar ul.product_list_widget li ins {display:block; background: none; text-decoration: none;}
+.sidebar ul.product_list_widget li del span.amount  {display:none;}
+.sidebar .screen-reader-text {display:none;}
+.sidebar #wp-calendar {width:90%; margin:0 auto; margin-top:12px; margin-bottom:12px;}
+.sidebar .tagcloud {padding: 17px 0 4px; overflow:hidden;}
+.sidebar #searchform #searchsubmit {background:#b86662!important; cursor:pointer; width:100%!important; margin:0 auto!important; text-align: center!important; float:none!important; margin-top:4px!important; color:#fff!important; padding: 3px!important; font-size:12px!important; }
+p.tags {margin-top: 12px;}
+p.tags a {background:#5D5D65; color:#fff; padding:2px 6px 3px; border:none; font-size: 13px; text-decoration: none; margin-bottom:2px;  display: inline-block; }
+p.tags a:hover {background:#b86662; color:#fff;}
+.tagcloud {padding: 8px 0;}
+.tagcloud a{position: relative; display: block; border: 0; float: right; padding: 5px 7px; margin: 0 0 3px 3px; color: #fff; background: #37485c; font-size:13px !important;}
+.tagcloud a:hover {position: relative;background: #5B99C5;border: 0; text-decoration: none; color:#fff;}
+
+.single-section-container{padding-top:12px;}
+.single-section-title{border-bottom:6px solid #E8E8E8; text-align:center; margin-bottom:23px;}
+.single-section-title span.single-section-text{display:block; width:70px; padding:8px; background-color:#fff; margin:0px auto -17px;}
+.sharing-buttons { padding:0; margin:0 auto; display:table;}
+.sharing-buttons ul { list-style: none; margin:0; padding:0;  }
+.sharing-buttons ul li { display:inline-block; padding:11px 7px 12px; margin:0;}
+.sharing-buttons ul li i { color:#fff; text-align: center; font-size:16px; width:38px; height:38px; background:#37485c; border-radius:50%; padding:12px 0 0 0;}
+.sharing-buttons ul li:hover i { background:#5B99C5;}
+.sharing-buttons ul li a {color:#fff; font-size:17px; }
+.sharing-buttons ul li a:hover {color:#b86662; }
+
+
 
 /* Contact ------------------------ */
 .contact-section {padding:50px 0;}
@@ -790,6 +889,19 @@ header {
   height:550px;
 }
 
+}
+@media only screen and (max-width: 720px) {
+  
+  .logo img {
+    width:10% !important;
+  }
+}
+
+@media only screen and (min-width:620px) and (max-width: 720px) {
+  
+  .logo img {
+    width:15% !important;
+  }
 }
 @media only screen and (min-width: 720px) and (max-width: 959px) {
 .sf-menu a { font-size:13px; letter-spacing:0; padding:6px 10px 8px;}
