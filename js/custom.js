@@ -38,21 +38,6 @@ var wow = new WOW(
 );
 wow.init();
 
-// ______________ DISCOUNT NUMBER - CALL TO ACTION ON HOME PAGE
-jQuery(document).ready(function() {
-$('.calltoactioninfo').waypoint(function() {
-
-$('#discount')
-  .prop('number', 0)
-  .animateNumber(
-    {
-      number: 45
-    },
-    3000
-  );
-
-}, { offset: 800, triggerOnce: true });
-});
 
 // ______________ LOVED BY DEVELOPERS NUMBER - CALL TO ACTION ON HOME PAGE
 jQuery(document).ready(function() {
