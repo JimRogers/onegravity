@@ -7,15 +7,7 @@ jQuery('ul.sf-menu').superfish({
       animation: false,
       animationOut: false
 });
-
-// ______________ MOBILE MENU
-
- $(function(){
-       $('nav.mobile-menu').slicknav({
-          closedSymbol: "&#8594;",
-          openedSymbol: "&#8595;"
-});
-});  
+ 
 
 // ______________ HOME PAGE WORDS ROTATOR
 $("#js-rotating").Morphext({
@@ -39,21 +31,7 @@ var wow = new WOW(
 wow.init();
 
 
-// ______________ LOVED BY DEVELOPERS NUMBER - CALL TO ACTION ON HOME PAGE
-jQuery(document).ready(function() {
-$('.testimonials .circle').waypoint(function() {
 
-$('#lovedby')
-  .prop('number', 0)
-  .animateNumber(
-    {
-      number: 41169
-    },
-    3500
-  );
-
-}, { offset: 800, triggerOnce: true });
-});
 
 
 // SMOOTH SCROLL________________________//
@@ -88,6 +66,6 @@ $('#back-to-top').click(function(){
         });
 
 
-$(document).foundation();
+
 
 })(jQuery);
