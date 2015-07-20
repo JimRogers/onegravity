@@ -202,19 +202,19 @@ h1.jprt-item-title {
 	text-align: center;
 }
 .jprt-buttons .jprt-btn {
-	background: #27b0d1;
+	background: #37485c;
 	color: #fff;
 	font-size: 16px;
 	padding: 10px 15px;
 	margin: 10px;
 	box-shadow: none;
-	border: 2px solid #27b0d1;
+	border: 2px solid #37485c;
 	outline-style: none;
 }
 .jprt-buttons .jprt-btn:hover {
-	background: #27dbd1;
+	background: #62758C;
 	color: #fff;
-	border: 2px solid #27dbd1;
+	border: 2px solid #62758C;
 	outline-style: none;
 }
 .jprt-buttons .jprt-btn.jprt-btn-active {
